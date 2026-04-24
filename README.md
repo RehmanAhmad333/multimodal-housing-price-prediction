@@ -279,7 +279,7 @@ house-price-predictor/
 <div style="background: #1e2338; border-radius: 24px; padding: 1.5rem; margin: 30px 0;">
     <h2 style="color: #FFD93D; margin-top: 0;">⚙️ How to Run Locally</h2>
     <ol style="line-height: 1.7;">
-        <li><strong>Clone the repository</strong><br><code>git clone https://github.com/yourusername/house-price-predictor.git</code><br><code>cd house-price-predictor</code></li>
+        <li><strong>Clone the repository</strong><br><code>git clone https://github.com/RehmanAhmad333/house-price-predictor.git</code><br><code>cd house-price-predictor</code></li>
         <li><strong>Create virtual environment</strong><br><code>python -m venv venv</code><br><code>venv\Scripts\activate</code> (Windows) / <code>source venv/bin/activate</code> (Mac/Linux)</li>
         <li><strong>Install dependencies</strong><br><code>pip install -r requirements.txt</code></li>
         <li><strong>Place model files</strong><br>Add <code>model_fusion_final.keras</code>, <code>model_tabular_final.keras</code>, and <code>housing_clean.csv</code> in root directory</li>
@@ -361,7 +361,7 @@ h5py==3.9.0
     <h2 style="color: #FFD93D; margin-top: 0;">👤 Author</h2>
     <p><strong>Rehman Ahmad Cheema</strong><br>
     🔗 <a href="https://github.com/RehmanAhmad333" target="_blank" style="color: #FFD93D;">GitHub</a> • 
-    💼 <a href="#" style="color: #FFD93D;">LinkedIn</a></p>
+    💼 <a href="https://www.linkedin.com/in/rehman-ahmad-9a5b17384/" style="color: #FFD93D;">LinkedIn</a></p>
     <p style="margin-top: 10px;">AI/ML Engineer | Deep Learning Specialist | Multimodal AI Enthusiast</p>
 </div>
 
