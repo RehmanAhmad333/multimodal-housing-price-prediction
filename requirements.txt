@@ -1,7 +1,19 @@
-streamlit>=1.28.0,<2.0.0
-tensorflow-cpu>=2.12.0,<2.15.0
-Pillow>=9.0.0,<11.0.0
-numpy>=1.22.0,<1.25.0
-pandas>=1.5.0,<2.1.0
-scikit-learn>=1.2.0,<1.4.0
-h5py>=3.8.0,<4.0.0
+# Core ML Framework — CPU version (lighter for cloud)
+tensorflow-cpu==2.15.0
+
+# Web App
+streamlit==1.32.0
+
+# Data Processing
+numpy==1.26.4
+pandas==2.2.1
+
+# Image Processing
+Pillow==10.2.0
+
+# ML Utilities
+scikit-learn==1.4.1
+
+# TensorFlow dependencies (pin to avoid conflicts)
+protobuf==4.25.3
+h5py==3.10.0
