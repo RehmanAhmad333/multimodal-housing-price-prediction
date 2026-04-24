@@ -3,6 +3,7 @@ import numpy as np
 import pandas as pd
 import tensorflow as tf
 from tensorflow.keras.applications import ResNet50
+from sklearn.preprocessing import StandardScaler
 from PIL import Image
 import warnings
 import time
@@ -108,8 +109,8 @@ IMAGENET_STD  = np.array([0.229, 0.224, 0.225])
 # REQUIRED FILES CHECK — fail fast with clear message
  
 REQUIRED_FILES = {
-    'model_fusion_final.keras':  'Fusion model (from Google Drive)',
-    'model_tabular_final.keras': 'Tabular model (from Google Drive)',
+    'model_fusion_final_v3.keras':  'Fusion model (from Google Drive)',
+    'model_tabular_final_v3.keras': 'Tabular model (from Google Drive)',
     'housing_clean.csv':         'Clean dataset (from local preprocessing)',
     'scaler.pkl':            'Fitted scaler (from Colab save step)',
     'zipcode_map.json':          'Zipcode map (from Colab save step)',
@@ -129,10 +130,10 @@ if missing:
 def load_everything():
     # Load Keras models (compile=False — faster load, we only predict)
     fusion_model  = tf.keras.models.load_model(
-        'model_fusion_final.keras',  compile=False
+        'model_fusion_final_v3.keras',  compile=False
     )
     tabular_model = tf.keras.models.load_model(
-        'model_tabular_final.keras', compile=False
+        'model_tabular_final_v3.keras', compile=False
     )
 
     # ResNet50 — frozen, only for feature extraction at inference time
